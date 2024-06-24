@@ -1,96 +1,48 @@
 ﻿#Requires AutoHotkey v2.0
 
-#c:: {
-  send "^c"
-}
+#c::send "^c"
 
-#v:: {
-  send "^v"
-}
+#v::send "^v"
 
-#s:: {
-  send "^s"
-}
+#s::send "^s"
 
-#d:: {
-  send "^d"
-}
+#z::send "^z"
 
-#z:: {
-  send "^z"
-}
+#+z::send "^+z"
 
-#+z:: {
-  send "^+z"
-}
+#x::send "^x"
 
-#x:: {
-  send "^x"
-}
+#+f::send "^+f"
 
-#+f:: {
-  send "^+f"
-}
+@::send "`""
 
-@:: {
-  send "`""
-}
+"::send "@"
 
-":: {
-  send "@"
-}
+#k::send "^k"
 
-#k:: {
-  send "^k"
-}
+#q::send "!{f4}"
 
-#q:: {
-  send "!{f4}"
-}
+#r::send "^r"
 
-#r:: {
-  send "^r"
-}
+#+Space::send "^+{Space}"
 
-#+Space:: {
-  send "^+{Space}"
-}
+#f::send "^f"
 
-#f:: {
-  send "^f"
-}
++#::send "|"
 
-+#:: {
-  send "|"
-}
+#::send "\"
 
-#:: {
-  send "\"
-}
+¬::SendText "~"
 
-¬:: {
-  SendText "~"
-}
+<!3::SendText "#"
 
-<!3:: {
-  SendText "#"
-}
+^!3::SendText "#"
 
-^!3:: {
-  SendText "#"
-}
+#a::send "^a"
 
-#a:: {
-  send "^a"
-}
+#<+s::send "^+s"
 
-#<+s:: {
-  send "^+s"
-}
-
-#l:: {
-  send "^l"
-}
+#l::send "^l"
 
 #Space::{
   send "#s"
@@ -98,26 +50,36 @@
 
 <#Tab::AltTab
 
-#BackSpace:: {
-  send "{Home}{ShiftDown}{End}{ShiftUp}{Del}"
+#BackSpace::send "{Home}{ShiftDown}{End}{ShiftUp}{Del}"
+
+!BackSpace::send "^{BackSpace}"
+
+#Right::send "{End}"
+
+#Left::send "{Home}"
+
+!Right::send "^{Right}"
+
+!Left::send "^{Left}"
+
+#^+4::send "{PrintScreen}"
+
+#+4::send "{PrintScreen}"
+
+#,::{
+  send "^,"
 }
 
-!BackSpace:: {
-  send "^{BackSpace}"
-}
+#HotIf WinActive("ahk_exe Code.exe")
 
-#Right:: {
-  send "{End}"
-}
+#+p::send "^+p"
 
-#Left:: {
-  send "{Home}"
-}
+#p::send "^p"
 
-!Right:: {
-  send "^{Right}"
-}
+^`::send "^'"
 
-!Left:: {
-  send "^{Left}"
-}
+#k::send "^k"
+
+#d::send "^d"
+
+#HotIf 
