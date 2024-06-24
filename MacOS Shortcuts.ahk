@@ -1,4 +1,5 @@
 ﻿#Requires AutoHotkey v2.0
+#SingleInstance
 
 #c::send "^c"
 
@@ -50,7 +51,15 @@
 
 <#Tab::AltTab
 
-#BackSpace::send "{Home}{ShiftDown}{End}{ShiftUp}{Del}"
+#BackSpace::send "{ShiftDown}{Home}{ShiftUp}{Del}"
+
+#+Left::send "{ShiftDown}{Home}"
+
+#+Right::send "{ShiftDown}{End}"
+
+!+Left::send "^+{Left}"
+
+!+Right::send "^+{Right}"
 
 !BackSpace::send "^{BackSpace}"
 
@@ -82,4 +91,14 @@
 
 #d::send "^d"
 
-#HotIf 
+#LButton::send "^{LButton}"
+
+#HotIf
+
+#HotIf WinActive("ahk_exe chrome.exe")
+
+!#i::send "{F12}"
+
+#+t::send "^+t"
+
+#HotIf
