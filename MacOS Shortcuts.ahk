@@ -79,6 +79,10 @@
   send "^,"
 }
 
+#b::send "^b"
+
+#i::send "^i"
+
 #HotIf WinActive("ahk_exe Code.exe")
 
 #+p::send "^+p"
@@ -92,6 +96,8 @@
 #d::send "^d"
 
 #LButton::send "^{LButton}"
+
+#/::send "^/"
 
 #HotIf
 
