@@ -45,9 +45,7 @@
 
 #l::send "^l"
 
-#Space::{
-  send "#s"
-}
+#Space::send "#s"
 
 <#Tab::AltTab
 
@@ -83,6 +81,10 @@
 
 #i::send "^i"
 
+#w::send "^w"
+
+#+n::send "^+n"
+
 #HotIf WinActive("ahk_exe Code.exe")
 
 #+p::send "^+p"
@@ -106,5 +108,7 @@
 !#i::send "{F12}"
 
 #+t::send "^+t"
+
+^`::send "{F12}"
 
 #HotIf
